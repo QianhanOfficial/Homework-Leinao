@@ -1,0 +1,42 @@
+version: "3.1"
+
+stories:
+- story: greet path1
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+
+- story: handle user goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_answer_goodbye
+
+- story: handle user whattodo
+  steps:
+  - intent: whattodo
+  - action: utter_answer_whattodo
+
+- story: handle user eating
+  steps:
+  - intent: eating
+  - action: utter_answer_eating
+
+- story: handle user careness
+  steps:
+  - intent: careness
+  - action: utter_answer_careness
+
+- story: handle user praise
+  steps:
+  - intent: praise
+  - action: utter_answer_praise
+
+- story: handle user afraid
+  steps:
+  - intent: afraid
+  - action: utter_answer_afraid
+
+- story: handle user happy
+  steps:
+  - intent: happy
+  - action: utter_answer_happy

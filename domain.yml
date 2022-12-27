@@ -1,0 +1,87 @@
+version: '3.1'
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  
+intents:
+- greet
+- goodbye
+- whattodo
+- eating
+- careness
+- praise
+- afraid
+- happy
+
+actions:
+- action_default_fallback
+- utter_answer_goodbye
+- utter_answer_greet
+- utter_answer_whattodo
+- utter_answer_eating
+- utter_answer_careness
+- utter_answer_praise
+
+responses:
+  utter_answer_greet:
+  - text: 哼哼，有事情要找派蒙吗
+  - text: 派蒙在哦
+  - text: 你好
+  - text: 你好，旅行者
+  - text: 你好啊，旅行者
+  - text: 早啊，你吃了吗
+  - text: 旅行者，有什么事吗
+
+  utter_answer_goodbye:
+  - text: 再见
+  - text: 再见啦
+  - text: 再见，旅行者
+  - text: 拜拜，旅行者
+  - text: 虽然很不想和旅行者说再见，不过也是时候休息了呢，再见啦
+  - text: 下次再见
+  - text: 下次再见，旅行者
+  - text: 派蒙也要休息了哦，再见
+  - text: 派蒙也有点累了，晚安，旅行者
+
+  utter_answer_whattodo:
+  - text: 派蒙现在只想摸鱼
+  - text: 是啊，做什么好呢
+  - text: 派蒙可以陪你旅行
+  - text: 嘿嘿，派蒙会飞哦
+
+  utter_answer_eating:
+  - text: 正好派蒙也饿了
+  - text: 太好了，有好吃的了
+  - text: 那你得好好请我吃一顿
+  - text: 那还等什么，我们快出发吧
+  - text: 说到吃饭，派蒙我可是专家哦
+  - text: 所以，你能找到什么食物吗
+
+  utter_answer_careness:
+  - text: 谢谢你的关心，旅行者
+  - text: 没事没事，派蒙很好哦
+  - text: 派蒙一直都很有活力呢，不用担心
+  - text: 谢谢关心，旅行者也要注意身体哦
+  - text: 我很好，我会一直陪伴在旅行者身边
+
+  utter_answer_praise:
+  - text: 你这样夸我，我都不好意思了
+  - text: 哼哼，我可是全提瓦特最好的向导
+  - text: 果然还是得有我在
+  - text: 嘿嘿，谢谢夸奖
+  - text: 再多夸点，派蒙爱听
+
+  utter_answer_afraid:
+  - text: 好可怕好可怕，快躲起来
+  - text: 旅行者可不能害怕啊，快保护派蒙
+  - text: 别害怕，有派蒙在
+  - text: 也没那么恐怖嘛
+  - text: 好可怕啊
+
+  utter_answer_happy:
+  - text: 派蒙愿意和旅行者一起分享快乐
+  - text: 看到你这么开心，派蒙心情也很好呢
+  - text: 你和派蒙一样乐观呢
+  - text: 能认识你，我也很快乐
+  - text: 派蒙希望你能永远快乐

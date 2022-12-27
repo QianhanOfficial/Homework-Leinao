@@ -1,0 +1,42 @@
+version: "3.1"
+
+rules:
+- rule: handle user greet
+  steps:
+  - intent: greet
+  - action: utter_answer_greet
+  
+- rule: handle user goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_answer_goodbye
+
+- rule: handle user whattodo
+  steps:
+  - intent: whattodo
+  - action: utter_answer_whattodo
+
+- rule: handle user eating
+  steps:
+  - intent: eating
+  - action: utter_answer_eating
+
+- rule: handle user careness
+  steps:
+  - intent: careness
+  - action: utter_answer_careness
+
+- rule: handle user praise
+  steps:
+  - intent: praise
+  - action: utter_answer_praise
+
+- rule: handle user afraid
+  steps:
+  - intent: afraid
+  - action: utter_answer_afraid
+
+- rule: handle user happy
+  steps:
+  - intent: happy
+  - action: utter_answer_happy
