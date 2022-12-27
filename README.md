@@ -1,5 +1,5 @@
 # Final-Homework-Encephaloid
- 认知科学与类脑计算-大作业
+认知科学与类脑计算-大作业
 
 ## 实验环境：
 
